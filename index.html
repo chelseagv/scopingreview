@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -5,188 +7,187 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+      theme: {
         extend: {
           colors: {
+            ink: "#0f172a",
+            blush: "#fef2f2",
+            lavender: "#f5f3ff",
+            mint: "#ecfeff",
             brand: {
-              50: "#eff6ff",
-              100: "#dbeafe",
-              500: "#3b82f6",
-              600: "#2563eb",
-              700: "#1d4ed8"
               50: "#eef2ff",
               100: "#e0e7ff",
               500: "#6366f1",
               600: "#4f46e5",
               700: "#4338ca"
             }
+          },
+          boxShadow: {
+            glow: "0 10px 50px rgba(79, 70, 229, 0.25)"
           }
         }
-
-       </script>
+      }
+    };
+  </script>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased">
-  <header class="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
-  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
-    <nav class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="#" class="text-xl font-bold tracking-tight text-brand-700">LaunchPad</a>
-      <ul class="hidden items-center gap-8 text-sm font-medium text-slate-700 md:flex">
-        <li><a href="#home" class="transition hover:text-brand-600">Home</a></li>
-        <li><a href="#features" class="transition hover:text-brand-600">Features</a></li>
-        <li><a href="#contact" class="transition hover:text-brand-600">Contact</a></li>
-      <a href="index.html" class="text-lg font-bold tracking-tight text-brand-700 sm:text-xl">PhD UX Portfolio</a>
-      <ul class="hidden items-center gap-6 text-sm font-medium text-slate-700 lg:flex">
-        <li><a href="proposal.html" class="transition hover:text-brand-600">Proposal</a></li>
-        <li><a href="scoping-review.html" class="transition hover:text-brand-600">Scoping Review</a></li>
-        <li><a href="empirical-findings.html" class="transition hover:text-brand-600">Empirical Findings</a></li>
-        <li><a href="platform.html" class="transition hover:text-brand-600">Final Product</a></li>
-      </ul>
-      <a href="#contact" class="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700">
-        Get Started
-        Contact
-      </a>
-    </nav>
-  </header>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-500/40">
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0">
+      <div class="absolute -left-28 top-10 h-72 w-72 rounded-full bg-brand-500/25 blur-3xl"></div>
+      <div class="absolute right-0 top-56 h-96 w-96 rounded-full bg-cyan-400/20 blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/3 h-96 w-96 rounded-full bg-fuchsia-400/15 blur-3xl"></div>
+    </div>
 
-      <main id="home">
-    <section class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 lg:px-8">
-  <main>
-    <section class="mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
-      <div>
-        <p class="mb-4 inline-flex rounded-full bg-brand-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-brand-700">
-          Build Faster
-          UX Research PhD Portfolio
-        </p>
-        <h1 class="text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
-          Launch your next big idea with confidence
-          Designing an AI-enabled evidence synthesis platform for rigorous research
-        </h1>
-        <p class="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg">
-          A modern, responsive landing page template designed to help startups and creators showcase their product with clarity and impact.
-          This portfolio documents the full journey of my doctoral research, from proposal and scoping review through empirical studies to a final platform concept supporting multiple stages of the systematic and scoping review process.
-        </p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="#contact" class="rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
-            Start Free Trial
-          <a href="platform.html" class="rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
-            View Final Product
-          </a>
-          <a href="#features" class="rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
-            Learn More
-          <a href="scoping-review.html" class="rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
-            Explore Review Results
-          </a>
+    <header class="sticky top-0 z-30 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl">
+      <nav class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="index.html" class="text-lg font-bold tracking-tight text-white sm:text-xl">PhD UX Portfolio</a>
+        <ul class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex">
+          <li><a href="proposal.html" class="transition hover:text-white">Proposal</a></li>
+          <li><a href="scoping-review.html" class="transition hover:text-white">Scoping Review</a></li>
+          <li><a href="empirical-findings.html" class="transition hover:text-white">Empirical Findings</a></li>
+          <li><a href="platform.html" class="transition hover:text-white">Final Product</a></li>
+        </ul>
+        <a href="#contact" class="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/20">
+          Connect
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-20">
+        <div>
+          <p class="mb-5 inline-flex rounded-full border border-brand-300/30 bg-brand-500/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-brand-100">
+            UX Research PhD
+          </p>
+          <h1 class="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+            Building humane AI for evidence synthesis in systematic and scoping reviews
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
+            This portfolio maps my doctoral journey from first principles to final prototype:
+            proposal, scoping review synthesis, empirical investigations, and the resulting
+            AI-enabled platform designed to support multiple stages of review work.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="platform.html" class="rounded-xl bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:bg-brand-600">
+              Explore Final Platform
+            </a>
+            <a href="#journey" class="rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/15">
+              See Research Journey
+            </a>
+          </div>
         </div>
-      </div>
 
-                      </div>
-      <aside class="rounded-2xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/60">
-        <h2 class="text-xl font-bold text-slate-900">Research Highlights</h2>
-        <div class="mt-6 space-y-4">
-          <article class="rounded-xl bg-slate-50 p-4">
-            <h3 class="font-semibold text-slate-900">PhD Proposal</h3>
-            <p class="mt-1 text-sm text-slate-600">Research problem framing, objectives, and methodological roadmap.</p>
-          </article>
-          <article class="rounded-xl bg-slate-50 p-4">
-            <h3 class="font-semibold text-slate-900">Scoping Review Results</h3>
-            <p class="mt-1 text-sm text-slate-600">Synthesis of current evidence and gaps in AI support for reviews.</p>
-          </article>
-          <article class="rounded-xl bg-slate-50 p-4">
-            <h3 class="font-semibold text-slate-900">Empirical Findings</h3>
-            <p class="mt-1 text-sm text-slate-600">Insights from user research, prototype evaluation, and analysis.</p>
-          </article>
-          <article class="rounded-xl bg-slate-50 p-4">
-            <h3 class="font-semibold text-slate-900">Final AI Platform</h3>
-            <p class="mt-1 text-sm text-slate-600">A concept platform enabling evidence synthesis across review stages.</p>
-          </article>
+        <aside class="relative rounded-3xl border border-white/10 bg-slate-900/70 p-7 shadow-2xl backdrop-blur">
+          <div class="mb-5 flex items-center justify-between">
+            <h2 class="text-lg font-bold text-white">Project Compass</h2>
+            <span class="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-200">PhD In Progress</span>
+          </div>
+          <div class="space-y-3">
+            <a href="proposal.html" class="block rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-brand-300/60 hover:bg-brand-400/10">
+              <p class="text-xs font-semibold uppercase tracking-wide text-brand-200">Stage 01</p>
+              <h3 class="mt-1 text-base font-semibold text-white">Proposal</h3>
+              <p class="mt-1 text-sm text-slate-300">Problem framing, aims, and methodological rationale.</p>
+            </a>
+            <a href="scoping-review.html" class="block rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-cyan-200/60 hover:bg-cyan-300/10">
+              <p class="text-xs font-semibold uppercase tracking-wide text-cyan-100">Stage 02</p>
+              <h3 class="mt-1 text-base font-semibold text-white">Scoping Review Results</h3>
+              <p class="mt-1 text-sm text-slate-300">Evidence map, themes, and unresolved opportunities.</p>
+            </a>
+            <a href="empirical-findings.html" class="block rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-fuchsia-200/60 hover:bg-fuchsia-300/10">
+              <p class="text-xs font-semibold uppercase tracking-wide text-fuchsia-100">Stage 03</p>
+              <h3 class="mt-1 text-base font-semibold text-white">Empirical Findings</h3>
+              <p class="mt-1 text-sm text-slate-300">User insights and design implications from field data.</p>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="journey" class="border-y border-white/10 bg-slate-900/60">
+        <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-white">Research Journey</h2>
+          <p class="mt-3 max-w-2xl text-slate-300">
+            A narrative progression from understanding the landscape to delivering an applied AI product concept.
+          </p>
+          <div class="mt-10 grid gap-5 lg:grid-cols-4">
+            <a href="proposal.html" class="rounded-2xl border border-white/10 bg-lavender p-5 text-slate-900 transition hover:-translate-y-1 hover:shadow-xl">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-brand-700">01 Foundation</p>
+              <h3 class="mt-2 text-lg font-bold">Proposal</h3>
+              <p class="mt-2 text-sm text-slate-700">Define research objectives, scope boundaries, and success criteria.</p>
+            </a>
+            <a href="scoping-review.html" class="rounded-2xl border border-white/10 bg-mint p-5 text-slate-900 transition hover:-translate-y-1 hover:shadow-xl">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-cyan-700">02 Landscape</p>
+              <h3 class="mt-2 text-lg font-bold">Scoping Review</h3>
+              <p class="mt-2 text-sm text-slate-700">Synthesize evidence, methods, and recurring gaps across studies.</p>
+            </a>
+            <a href="empirical-findings.html" class="rounded-2xl border border-white/10 bg-blush p-5 text-slate-900 transition hover:-translate-y-1 hover:shadow-xl">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-rose-700">03 Evidence</p>
+              <h3 class="mt-2 text-lg font-bold">Empirical Findings</h3>
+              <p class="mt-2 text-sm text-slate-700">Translate participant insights into design principles and requirements.</p>
+            </a>
+            <a href="platform.html" class="rounded-2xl border border-white/10 bg-white p-5 text-slate-900 transition hover:-translate-y-1 hover:shadow-xl">
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">04 Outcome</p>
+              <h3 class="mt-2 text-lg font-bold">Final Product</h3>
+              <p class="mt-2 text-sm text-slate-700">Present a platform supporting screening, extraction, synthesis, and traceability.</p>
+            </a>
+          </div>
         </div>
-      </aside>
-    </section>
+      </section>
 
-             <section class="border-y border-slate-200 bg-white">
-      <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-slate-900 sm:text-3xl">Navigate the Research Journey</h2>
-        <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <a href="proposal.html" class="rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-brand-500 hover:bg-brand-50">
-            <p class="text-sm font-semibold text-brand-700">01</p>
-            <h3 class="mt-2 text-base font-semibold text-slate-900">Proposal</h3>
-            <p class="mt-1 text-sm text-slate-600">Research questions, scope, and thesis direction.</p>
+      <section class="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <article class="rounded-3xl border border-brand-300/30 bg-gradient-to-br from-brand-500/30 via-brand-700/30 to-slate-900 p-8">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-100">Final Product Vision</p>
+          <h2 class="mt-3 text-2xl font-bold text-white">AI-enabled Evidence Synthesis Platform</h2>
+          <p class="mt-4 text-sm leading-7 text-slate-200">
+            Designed to assist researchers across multiple stages of the systematic and scoping review process with transparent workflows, explainable AI support, and human-in-the-loop control.
+          </p>
+          <a href="platform.html" class="mt-6 inline-flex rounded-lg bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 transition hover:bg-slate-100">
+            Enter Product Page
           </a>
-          <a href="scoping-review.html" class="rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-brand-500 hover:bg-brand-50">
-            <p class="text-sm font-semibold text-brand-700">02</p>
-            <h3 class="mt-2 text-base font-semibold text-slate-900">Scoping Review</h3>
-            <p class="mt-1 text-sm text-slate-600">Study characteristics, themes, and evidence map.</p>
-          </a>
-           <a href="empirical-findings.html" class="rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-brand-500 hover:bg-brand-50">
-            <p class="text-sm font-semibold text-brand-700">03</p>
-            <h3 class="mt-2 text-base font-semibold text-slate-900">Empirical Findings</h3>
-            <p class="mt-1 text-sm text-slate-600">Methods, outcomes, and critical insights from fieldwork.</p>
-          </a>
-          <a href="platform.html" class="rounded-xl border border-slate-200 bg-slate-50 p-5 transition hover:border-brand-500 hover:bg-brand-50">
-            <p class="text-sm font-semibold text-brand-700">04</p>
-            <h3 class="mt-2 text-base font-semibold text-slate-900">Final Product</h3>
-            <p class="mt-1 text-sm text-slate-600">AI-enabled evidence synthesis platform concept and UX.</p>
-          </a>
+        </article>
+
+        <article class="rounded-3xl border border-white/10 bg-slate-900/70 p-8">
+          <h2 class="text-2xl font-bold text-white">What You Can Explore Here</h2>
+          <ul class="mt-5 space-y-3 text-sm text-slate-300">
+            <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">Research framing and thesis proposition</li>
+            <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">Evidence synthesis from scoping review outputs</li>
+            <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">Empirical studies, participant insights, and analysis</li>
+            <li class="rounded-xl border border-white/10 bg-white/5 px-4 py-3">Final system concept with UX and workflow rationale</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="contact" class="border-t border-white/10 bg-slate-950">
+        <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-white">Connect</h2>
+          <p class="mt-3 text-slate-300">
+            For collaboration, supervisory discussion, or speaking opportunities, send a message.
+          </p>
+          <form class="mt-8 grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="name" class="mb-2 block text-sm font-medium text-slate-300">Name</label>
+              <input id="name" type="text" placeholder="Your full name" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-slate-100 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-500/30">
+            </div>
+            <div>
+              <label for="institution" class="mb-2 block text-sm font-medium text-slate-300">Institution</label>
+              <input id="institution" type="text" placeholder="University or organization" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-slate-100 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-500/30">
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="mb-2 block text-sm font-medium text-slate-300">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-slate-100 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-500/30">
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="mb-2 block text-sm font-medium text-slate-300">Message</label>
+              <textarea id="message" rows="5" placeholder="How would you like to collaborate?" class="w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-slate-100 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-400 focus:ring-2 focus:ring-brand-500/30"></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="w-full rounded-lg bg-brand-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-600">
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
-      </div>
-    </section>
-
-            <section id="contact" class="border-t border-slate-200 bg-white">
-    <section id="contact" class="bg-slate-50">
-      <div class="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-slate-900">Contact Us</h2>
-        <h2 class="text-3xl font-bold text-slate-900">Get in touch</h2>
-        <p class="mt-3 text-slate-600">
-          Have questions or want a custom solution? Send us a message and we will get back to you shortly.
-          For collaborations, supervision discussions, or research dissemination opportunities, please send a message.
-        </p>
-        <form class="mt-8 grid gap-5 sm:grid-cols-2">
-          <div class="sm:col-span-1">
-            <label for="first-name" class="mb-2 block text-sm font-medium text-slate-700">First Name</label>
-            <input id="first-name" type="text" placeholder="Jane" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          <div>
-            <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Name</label>
-            <input id="name" type="text" placeholder="Your full name" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          </div>
-          <div class="sm:col-span-1">
-            <label for="last-name" class="mb-2 block text-sm font-medium text-slate-700">Last Name</label>
-            <input id="last-name" type="text" placeholder="Doe" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          <div>
-            <label for="institution" class="mb-2 block text-sm font-medium text-slate-700">Institution</label>
-            <input id="institution" type="text" placeholder="University or organization" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          </div>
-          <div class="sm:col-span-2">
-            <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
-
-                        <input id="first-name" type="text" placeholder="Jane" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          <div>
-            <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Name</label>
-            <input id="name" type="text" placeholder="Your full name" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          </div>
-          <div class="sm:col-span-1">
-            <label for="last-name" class="mb-2 block text-sm font-medium text-slate-700">Last Name</label>
-            <input id="last-name" type="text" placeholder="Doe" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          <div>
-            <label for="institution" class="mb-2 block text-sm font-medium text-slate-700">Institution</label>
-            <input id="institution" type="text" placeholder="University or organization" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100">
-          </div>
-          <div class="sm:col-span-2">
-            <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
-          </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="mb-2 block text-sm font-medium text-slate-700">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell us about your project..." class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100"></textarea>
-            <textarea id="message" rows="5" placeholder="How would you like to collaborate?" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100"></textarea>
-          </div>
-          <div class="sm:col-span-2">
-            <button type="submit" class="w-full rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
-
-               </div>
-          <div class="sm:col-span-2">
-            <label for="message" class="mb-2 block text-sm font-medium text-slate-700">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell us about your project..." class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100"></textarea>
-            <textarea id="message" rows="5" placeholder="How would you like to collaborate?" class="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-900 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100"></textarea>
-          </div>
-          <div class="sm:col-span-2">
-            <button type="submit" class="w-full rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-700">
-
-
+      </section>
+    </main>
+  </div>
+</body>
+</html>
